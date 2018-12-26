@@ -1,0 +1,36 @@
+/* main css */
+
+/* 主页style */
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.home {
+    position: absolute;
+   
+    top: 100px;
+    left: 50%;
+    margin-left: -250px;
+    width: 500px;
+    height: 300px;
+    background: rgb(245, 205, 94);
+    border: 1px solid rgb(245, 205, 94);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.home h1 {
+    margin-top: 30px;
+    font-size: 22px;
+}
+
+.home h1 a {
+    color: rgb(255, 254, 254);
+}
+
+.home h2 {
+    margin-top: 50px;
+}
