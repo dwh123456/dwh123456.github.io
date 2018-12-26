@@ -2,7 +2,8 @@
 
 
 window.onload = (function() {
-            var imgUrl = 'https://photo.tuchong.com/3325314/f/121700373.jpg';  // 分享后展示的一张图片                 var lineLink = 'http://www.baidu.com'; // 点击分享后跳转的页面地址
+            var imgUrl = 'img/deng.png';  // 分享后展示的一张图片                 
+            var lineLink = 'http://www.baidu.com'; // 点击分享后跳转的页面地址
     
             var descContent = "这里相当于简介";  // 分享后的描述信息
     
