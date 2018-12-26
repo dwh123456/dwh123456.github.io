@@ -105,4 +105,6 @@ window.onload = (function() {
                 });
     
             }, false);
-})
+            
+            console.log("测试");
+})()
