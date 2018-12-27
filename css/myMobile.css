@@ -1,0 +1,80 @@
+
+
+
+/* mobile 移动端样式 */
+
+
+
+body {
+    background-color: #000;
+    width: 100%;
+    
+}
+
+.adv {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid #cccccc; */
+    /* display: flex; */
+    /* padding: 10px; */
+    
+    background-color: darkkhaki;
+   
+}
+
+.adv aside {
+    /* display: none; */
+    width: 100%;
+    text-align: center;
+    
+}
+
+.adv aside .classif {
+    margin-top: 10px;
+}
+
+
+/* 列表 */
+.adv aside .classif li {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 3px;
+    padding-left: 10px; 
+    font-size: 15px;
+    background-color: #373737;
+    
+}
+
+/* 将copy隐藏 */
+.adv aside .copy {
+    display: none;
+}
+
+
+/* 将目录隐藏 */
+.adv aside .classif2 {
+    display: none;
+}
+
+/* 上下分隔span */
+.adv>span {
+    display: inline-block;
+    width: 100%;
+    border: 0.5px solid #000; 
+}
+
+/* 文章区 */
+.adv section {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.adv section img {
+    width: 100%;
+}
+
+.adv aside .catalogue {
+    display: none;
+}
