@@ -30,6 +30,16 @@ body {
     
 }
 
+.adv aside h1 {
+    padding-top: 5px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.adv aside h1+p {
+    font-size: 10px;
+}
+
 .adv aside .classif {
     margin-top: 10px;
 }
@@ -39,8 +49,8 @@ body {
 .adv aside .classif li {
     height: 30px;
     line-height: 30px;
-    margin-top: 3px;
-    padding-left: 10px; 
+    /* margin-top: 3px; */
+    /* padding-left: 10px;  */
     font-size: 15px;
     background-color: #373737;
     
