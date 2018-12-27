@@ -49,7 +49,7 @@ body {
 .adv aside .classif li {
     height: 30px;
     line-height: 30px;
-    /* margin-top: 3px; */
+    margin-top: 0.5px;
     /* padding-left: 10px;  */
     font-size: 15px;
     background-color: #373737;
