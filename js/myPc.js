@@ -108,4 +108,25 @@ window.onload = (function() {
             }, false);
             
             console.log("测试");
+
+
+
+
+
+            // 返回顶部
+            var top = document.getElementById('top');
+            var scrollH
+            
+            window.onscroll = function() {
+                scrollH = document.documentElement.scrollTop;
+                setTimeout(function() {
+                    console.log(scrollH)
+                     top.onclick =function() {
+                        document.documentElement.scrollTop = 0;
+                        console.log(scrollH)
+                    }
+                },500);
+                
+            }
+            
 })()

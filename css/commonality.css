@@ -31,5 +31,15 @@ a {
 }
 
 
+.top {
+    position: fixed;
+    font-size: 15px;
+    /* z-index: 1000; */
+    color: #000;
+    bottom: 110px;
+    right: 10px;
+    background-color: rgba(207, 207, 207,0.8);
+}
+
 
 
