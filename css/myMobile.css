@@ -18,13 +18,31 @@ body {
     /* border: 1px solid #cccccc; */
     /* display: flex; */
     /* padding: 10px; */
-    
+    position: relative;
     background-color: darkkhaki;
    
 }
 
+
+/* 菜单 */
+.adv #check {
+    display: none;
+}
+
+.adv #checkl {
+    position: absolute;
+    right: 10px;
+    margin-top: 5px;
+    font-size: 16px;
+    color: rgb(214, 250, 85);
+}
+
+.adv #check:checked + aside #classif {
+    display: block;
+}
+
 .adv aside {
-    /* display: none; */
+    
     width: 100%;
     text-align: center;
     
@@ -42,6 +60,7 @@ body {
 
 .adv aside .classif {
     margin-top: 10px;
+    display: none;
 }
 
 
@@ -49,7 +68,7 @@ body {
 .adv aside .classif li {
     height: 30px;
     line-height: 30px;
-    margin-top: 0.5px;
+    margin-top: 1px;
     /* padding-left: 10px;  */
     font-size: 15px;
     background-color: #373737;
@@ -82,7 +101,7 @@ body {
 }
 
 .adv section img {
-    width: 100%;
+    width: 95%;
 }
 
 .adv aside .catalogue {

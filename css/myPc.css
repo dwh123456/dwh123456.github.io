@@ -1,12 +1,19 @@
         
-        body {
-            font-size: 13px;
-            color:floralwhite;
-            font-family: 'Courier New', Courier, monospace;
-        }
+body {
+    font-size: 13px;
+    color:floralwhite;
+    font-family: 'Courier New', Courier, monospace;
+}
 
 
-.adv span {
+        
+.adv #checkl,
+.adv #check {
+    display: none;
+}
+
+
+.adv > span {
     border: 0.5px solid #ccc;
 }
 
