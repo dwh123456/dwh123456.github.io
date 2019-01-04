@@ -27,7 +27,7 @@
         }
 
         hr {
-            border: 0.5px solid #ccc;
+            border: 0.5px dashed #ccc;
             width: 80%;
         }
 
@@ -41,7 +41,8 @@
         }
 
         .box .box-lx table {
-            width: 70rem;
+            /* width: 70rem; */
+            width: 100%;
         }
 
         .box .box-lx tr td {
@@ -53,6 +54,9 @@
             padding: 2px ;
         }
 
+        box .box-lx tr td.t1 {
+            word-wrap: break-word;
+        }
 
         .box .box-mh img {
             width: 100%;
@@ -66,7 +70,7 @@
             <table>
                 <tr>
                     <h3>线路一: <span class="box-lx_sp">玉山>杭州>哈尔滨>漠河>哈尔滨</span></h3>
-                    <td>出发点</td>
+                    <td class="t1">出<br/>发<br/>点</td>
                     <td>玉山</td>
                     <td>杭州</td>
                     <td>哈尔滨</td>
@@ -75,7 +79,7 @@
                     <td>北京</td>
                 </tr>
                 <tr>
-                    <td>可选火车</td>
+                    <td class="t1">可<br/>选<br/>火<br/>车</td>
                     <td>
                         初3 玉山>杭州
                         <hr>
