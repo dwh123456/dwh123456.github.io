@@ -31,6 +31,7 @@
 
     .box .box-gh {
         margin-top: 2rem;
+        overflow: auto;
     }
 
     .box .box-gh h3 {
@@ -40,8 +41,8 @@
     }
 
     .box .box-gh table {
-        width: 100%;
-       
+        width: 70rem;
+        
     }
 
     
@@ -63,11 +64,15 @@
         width: 80%;
     }
 
-    h3 {
+    .box .box-lx h3 {
         font-size: 1.3rem;
         margin-top: 1.6rem;
         text-align: left;
         padding: 0.5rem;
+    }
+
+    .box .box-lx h3 span.box-lx_sp {
+        font-size: 1.2rem;
     }
 
     .box  h1 {
