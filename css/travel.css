@@ -1,0 +1,72 @@
+
+/* pagingHTML/travel/donbei.html的公共样式 */
+
+
+    html {
+        font-size: 10px;
+        background-color: floralwhite;
+        padding-top: 1.5rem;
+    } 
+
+    @media only screen and (min-width: 700px) {
+    html {
+        font-size: 12px;
+    }
+    }
+
+    @media only screen and (min-width: 800px) {
+    html {
+        font-size: 13px;
+    }
+    }
+
+    hr {
+        border: 0.5px dashed #ccc;
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+    }
+
+    .box  h1 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .box .box-lx {
+        overflow: auto;
+    }
+
+    .box .box-lx .box-lx_sp{
+        font-size: 1.3rem;
+        color: rgb(71, 157, 255);
+    }
+
+    .box .box-lx table {
+        width: 70rem;
+        /* width: 100%; */
+    }
+
+    .box .box-lx tr td {
+        /* width: 40rem; */
+        /* min-width: 33rem; */
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 1.1rem;
+        padding: 2px ;
+    }
+
+    .box .box-lx tr td.t1 {
+        word-wrap: break-word;
+    }
+
+    .box .box-mh p {
+        margin-top: 10px;
+    }
+
+    .box .box-mh img {
+        width: 100%;
+    }
