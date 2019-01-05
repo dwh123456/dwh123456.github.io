@@ -9,16 +9,54 @@
     } 
 
     @media only screen and (min-width: 700px) {
-    html {
-        font-size: 12px;
-    }
+        html {
+            font-size: 12px;
+        }
     }
 
     @media only screen and (min-width: 800px) {
-    html {
-        font-size: 13px;
+        html {
+            font-size: 13px;
+        }
     }
+
+
+    body {
+        
+        text-align: center;
     }
+
+    /* 行程规划样式 */
+
+
+    .box .box-gh {
+        margin-top: 2rem;
+    }
+
+    .box .box-gh h3 {
+        text-align: left;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+
+    .box .box-gh table {
+        width: 100%;
+       
+    }
+
+    
+
+    .box .box-gh table tr th {
+        border: 1px solid rgb(51, 87, 247);
+        text-align: center;
+        
+    }
+
+    .box .box-gh table tr td {
+        border: 1px solid #ccc;
+    }
+
+    /* 行程路线样式 */
 
     hr {
         border: 0.5px dashed #ccc;
@@ -27,7 +65,9 @@
 
     h3 {
         font-size: 1.3rem;
-        margin-top: 10px;
+        margin-top: 1.6rem;
+        text-align: left;
+        padding: 0.5rem;
     }
 
     .box  h1 {
@@ -64,9 +104,25 @@
     }
 
     .box .box-mh p {
-        margin-top: 10px;
+        margin-top: 2rem;
     }
 
-    .box .box-mh img {
-        width: 100%;
+
+
+    /* 哈尔滨计划样式 */
+
+    .box .box-heb {
+        
+    }
+
+
+    /* 底部footer样式 */
+
+    footer {
+        background-color: black;
+        color: #fff;
+    }
+
+    footer p span {
+        margin: 10px;
     }
