@@ -26,6 +26,11 @@
         text-align: center;
     }
 
+    a {
+        color: rgb(255, 68, 68);
+        text-decoration: none;
+    }
+
     /* 行程规划样式 */
 
 
@@ -48,7 +53,7 @@
     
 
     .box .box-gh table tr th {
-        border: 1px solid rgb(51, 87, 247);
+        border: 1px solid rgb(244, 136, 248);
         text-align: center;
         
     }
@@ -69,6 +74,11 @@
         margin-top: 1.6rem;
         text-align: left;
         padding: 0.5rem;
+    }
+
+    .box .box-lx p {
+        text-align: start;
+        padding-left: 0.5rem;
     }
 
     .box .box-lx h3 span.box-lx_sp {
@@ -126,6 +136,8 @@
     footer {
         background-color: black;
         color: #fff;
+        width: 70rem;
+        margin: 0 auto;
     }
 
     footer p span {
