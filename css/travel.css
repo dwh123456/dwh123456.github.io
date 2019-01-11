@@ -120,13 +120,37 @@
 
     .box .box-mh p {
         margin-top: 2rem;
+        font-size: 12px;
+        font-weight: 700;
     }
 
 
     /* 哈尔滨计划样式 */
 
     .box .box-heb {
-        
+        text-align: start;
+        font-size: 11px;
+        padding: 10px 10px;
+    }
+
+    .box .box-heb h3 {
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .box .box-heb .txt> p {
+        padding: 15px 0;
+    }
+
+    .box .box-heb ul li {
+        /* border-bottom: 1px solid #ccc; */
+        height: 50px;
+    }
+
+    .box .box-heb .txt> p.lastp {
+        color: #ccc;
+        margin-top: 10px;
     }
 
 
