@@ -5,7 +5,7 @@
     html {
         font-size: 10px;
         background-color: floralwhite;
-        padding-top: 1.5rem;
+        padding-top: 1.3rem;
     } 
 
     @media only screen and (min-width: 700px) {
@@ -35,7 +35,7 @@
 
 
     .box .box-gh {
-        margin-top: 2rem;
+        margin-top: 1.3rem;
         overflow: auto;
     }
 
@@ -129,7 +129,7 @@
 
     .box .box-heb {
         text-align: start;
-        font-size: 11px;
+        font-size: 1.1rem;
         padding: 10px 10px;
     }
 
