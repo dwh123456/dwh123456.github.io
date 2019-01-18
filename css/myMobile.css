@@ -34,7 +34,7 @@ body {
     right: 10px;
     margin-top: 5px;
     font-size: 16px;
-    color: rgb(214, 250, 85);
+    
 }
 
 .adv #check:checked + aside #classif {

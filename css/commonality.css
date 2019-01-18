@@ -48,13 +48,11 @@ a {
     background-color: rgba(207, 207, 207,0.8);
 }
 
-.top a {
-    padding-left: 2px;
 
-}
 
 /* 侧边栏个人头像 */
 .adv .a1 {
+    padding-top: 20px;
     display: -webkit-flex;
     flex-direction: column;
     justify-content: center;
