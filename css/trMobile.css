@@ -4,8 +4,3 @@
 .box .box-mh img {
     width: 100%;
 }
-
-.box .box-gh {
-    margin-top: 1.3rem;
-    overflow-x: scroll;
-}

@@ -1,50 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>旅行日志</title>
-    <link rel="stylesheet" href="../../css/commonality.css"><!--公共样式 -->
-    <link rel="stylesheet" href="../../css/reset.css"><!--重置默认样式 -->
-    <!-- <link rel="stylesheet" href="../../css/travel.css" /> -->
+    <link rel="shortcut icon" href="../../img/deng.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/reset.css" /><!--重置默认样式 -->
+    <link rel="stylesheet" href="../../css/commonality.css" /><!--公共样式 -->
+    <link rel=" stylesheet" href=" ../../css/myPc.css " media="(min-width: 700px)"><!-- pc端样式 -->
+    <link rel=" stylesheet" href=" ../../css/myMobile.css " media="(max-width: 700px)"><!--mobile 移动端样式 -->
+    <link rel="stylesheet" href="../../css/travel.css"><!-- 旅行页公共样式 -->
 
-
-    <style> 
-        body {
-            color: #000;
-        }
-
-        a {
-            color: red;
-        }
+    <style>
+      
     </style>
-</head>
-<body>
-    <h2>我的旅行日志</h2>
-    <div>
-        <a href="donbei.html">东北旅行攻略</a>
-        <p>简介........</p>
+  </head>
+  <body>
+      <a name='topa'></a>
+    <div class="adv">
+      <label id="checkl" for="check">菜单 </label>
+      <input id="check" type="checkbox" />
+
+      <!-- 侧边栏 -->
+      <aside>
+        <div class="a1">
+          
+          <img src="https://photo.tuchong.com/3325314/f/606273556.jpg" title="头像" alt="">
+          <h1>myDeng博客</h1>
+          <p>联系:1733512710@qq.com</p>
+        </div>
+        <div class="classif" id="classif">
+          <ul>
+            <li><a href="../../index.html">首页</a></li>
+            <li><a href="../../pagingHTML/web/web.html">前端篇</a></li>
+            <li><a href="../../pagingHTML/travel/travel.html">旅行篇</a></li>
+            <li><a href="../../pagingHTML/photo/Photography.html">摄影篇</a></li>
+            <li><a href="../../pagingHTML/shoot/#">日记篇</a></li>
+            <li><a href="../../pagingHTML/else/#">其他</a></li>
+          </ul>
+        </div>
+        <!-- <hr style="color:rgb(233, 163, 22)" /> -->
+        <div class="classif2">
+          <p><span>该篇目录</span> | <span>该篇文章</span></p>
+          <div class="catalogue" id="catalogue">
+            <ul>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+              <li>
+                <a href="#">1.今天6今天6今天6今天6今天6今天6今天6今天6今天</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- copy版权 -->
+        <p class="copy">&copy;未注册</p>
+      </aside>
+
+      <span></span>
+
+      <!-- 内容 -->
+      <section>
+            <h2>我的旅行日志</h2>
+            <ul>
+              <li>
+                <a href="donbei.html">
+                  <p>东北旅行</p>
+                  <p>
+                      2019年2月旅行初步计划
+                    </p>
+                  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1547826620532&di=c42e575d12e83e97a61c7eeb547f064a&imgtype=0&src=http%3A%2F%2Fimage.naic.org.cn%2Fuploadfile%2F2018%2F0107%2F1515296917694490.jpg" alt="">
+                  
+                </a>
+                
+              </li>
+              <li>
+                  <a href="http://www.mafengwo.cn/i/9485821.html">
+                      <p>西北旅行</p>
+                      <p>
+                          2018年6月大西北
+                        </p>
+                      <img src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                      
+                    </a>
+              </li>
+              <li>
+                  <a href="http://www.mafengwo.cn/i/8857354.html">
+                      <p>西藏旅行</p>
+                      <p>
+                          2017年10月西藏
+                        </p>
+                      <img src="http://b1-q.mafengwo.net/s11/M00/29/EE/wKgBEFrGE4KAaH1KABCP7ZXxwqo84.jpeg?imageMogr2%2Fthumbnail%2F1360x%2Fstrip%2Fquality%2F90" alt="">
+                      
+                    </a>
+              </li>
+              <li>
+                  <a href="http://www.mafengwo.cn/i/7307429.html">
+                      <p>北京旅行</p>
+                      <p>
+                          2017年7月北京古长城
+                        </p>
+                      <img src="http://n3-q.mafengwo.net/s11/M00/02/A9/wKgBEFrM4pSAHWSeABjvsh70GUw53.jpeg?imageMogr2%2Fstrip" alt="">
+                      
+                    </a>
+              </li>
+              
+            </ul>
+        </section>
+
+        
+
+       
     </div>
-    <div>
-        <h3>日志1</h3>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-    </div>
-    <div>
-        <h3>日志1</h3>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-    </div>
-    <div>
-        <h3>日志1</h3>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-    </div>
-    <div>
-        <h3>日志1</h3>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-    </div>
-    <div>
-        <h3>日志1</h3>
-        <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-    </div>
-</body>
+    
+     <!-- 返回顶部 -->
+    <span class="top" id="top"><a href="#topa">TOP</a></span>
+    
+      
+    
+    
+  </body>
 </html>

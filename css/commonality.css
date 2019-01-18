@@ -23,6 +23,7 @@ body {
     font-size: 13px;
     color:floralwhite;
     font-family: 'Courier New', Courier, monospace;
+    height: 100%;
 }
 
 a {
@@ -34,12 +35,41 @@ a {
 /* 返回顶部样式 */
 .top {
     position: fixed;
-    font-size: 15px;
+    font-size: 17px;
     color: #000;
     bottom: 110px;
     right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    display: block;
+    border-radius: 50%;
     background-color: rgba(207, 207, 207,0.8);
 }
 
+.top a {
+    padding-left: 2px;
+
+}
+
+/* 侧边栏个人头像 */
+.adv .a1 {
+    display: -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.adv .a1 img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+/* 侧边栏 */
+.adv aside {
+    height: 100%;
+
+}
 
 
