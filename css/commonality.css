@@ -24,6 +24,7 @@ body {
     color:floralwhite;
     font-family: 'Courier New', Courier, monospace;
     height: 100%;
+    position: relative;
 }
 
 a {
@@ -35,7 +36,7 @@ a {
 /* 返回顶部样式 */
 .top {
     position: fixed;
-    font-size: 17px;
+    font-size: 12px;
     color: #000;
     bottom: 110px;
     right: 10px;
@@ -43,7 +44,7 @@ a {
     height: 40px;
     text-align: center;
     line-height: 40px;
-    display: block;
+    border: 1px solid #ccc;
     border-radius: 50%;
     background-color: rgba(207, 207, 207,0.8);
 }

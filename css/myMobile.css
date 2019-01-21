@@ -90,6 +90,7 @@ body {
 .adv>span {
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
     border: 0.5px solid #000; 
 }
 
