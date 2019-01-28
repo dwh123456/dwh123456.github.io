@@ -1,361 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width'>
-<title>前端个人笔记</title>
-<link rel='stylesheet' href='../../css/reset.css'><!--样式重置-->
-<link rel='stylesheet' href='font_zvmukwgy6l/iconfont.css'>
-<style>
-	
-	body {
-		font-family: 'Courier New', Courier, monospace;
-	}
-	
-	.box {
-		position: relative;
-		width: 100%;
-	}
-	
-	/*侧边栏样式*/
-	.box aside {
-		position: fixed;
-		left: 0;
-		top: 0;
-		/*width: 200px;*/
-		height: 100%;
-		background-color: #fff;
-		display: none;
-		overflow: auto;
-	}
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>前端个人笔记</title>
+	<link rel='stylesheet' href='../../css/reset.css'>
+	<!--样式重置-->
+	<link rel="stylesheet" href="../../css/commonality.css" />
+	<!--公共样式 -->
+	<link rel='stylesheet' href='font_zvmukwgy6l/iconfont.css'>
+	<style>
+		body {
+			font-family: 'Courier New', Courier, monospace;
 
-	.box aside .zsfl {
-		overflow: auto;
-		white-space: nowrap;
-	}
-	.box aside ul {
-		display: block;
-		/* list-style-type: disc; */
-		/* margin-block-start: 1em; */
-		/* margin-block-end: 1em; */
-		/* margin-inline-start: 0px; */
-		/* margin-inline-end: 0px; */
-		padding-inline-start: 10px;
-	}
+			color: #34495e;
+		}
 
-	.box aside ul a {
-		text-decoration: none;
-	}
+		.box {
+			position: relative;
+			width: 100%;
+		}
 
-	.box aside li {
-		padding-top: 10px;
-		/* display: list-item; */
-    	/* text-align: -webkit-match-parent */
-	}
-	
-	 #icon{
-		position: fixed;
-		
-		top: 0;
-	}
+		a {
 
-	
-	
-	/*内容样式*/
-	.box section div .top{
-		text-align: center;
-	}
+			color: #42b983;
+		}
 
-	.box section div pre {
-		overflow: auto;
-	}
+		/*侧边栏样式*/
+		.box aside {
+			position: fixed;
+			z-index: 889;
+			left: 0;
+			top: 0;
+			/*width: 200px;*/
+			height: 100%;
+			background-color: #fff;
+			display: none;
+			overflow: auto;
+			padding-top: 10px;
+		}
 
-	
-</style>
+		.box aside .zsfl {
+			overflow: auto;
+			white-space: nowrap;
+		}
+
+		.box aside ul {
+			display: block;
+			/* list-style-type: disc; */
+			/* margin-block-start: 1em; */
+			/* margin-block-end: 1em; */
+			/* margin-inline-start: 0px; */
+			/* margin-inline-end: 0px; */
+			padding-inline-start: 10px;
+		}
+
+		.box aside ul a {
+			text-decoration: none;
+		}
+
+		.box aside li {
+			padding-top: 5px;
+			/* display: list-item; */
+			/* text-align: -webkit-match-parent */
+		}
+
+		#icon {
+			position: fixed;
+			z-index: 889;
+			top: 3px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+
+
+		/*内容样式*/
+		.topBox {
+			position: fixed;
+			width: 100%;
+			z-index: 888;
+			background-color: rgb(243, 240, 225);
+			height: 25px;
+		}
+
+		.box section {
+			padding: 25px 5px 0 5px;
+		}
+
+		.box section div .top {
+			text-align: center;
+		}
+
+		.box section div pre {
+			overflow: auto;
+			border: 1px solid #ccc;
+		}
+	</style>
 </head>
+
 <body>
+	<a name='topa'></a><!-- 返回顶部目标 -->
+	<!-- 返回顶部 -->
+	<button class="top" id="top"><a href="#topa">TOP</a></button>
+	<div class="topBox"></div>
+
 	<div class='box'>
-		
+
 		<!--侧边栏-->
 		<aside class="leftN" id='leftN'>
-			
-				<ul>
-					<h2>我的计算机笔记</h2>
-					<li>
-						
-						<a href='#js'>前端</a>
-					</li>
-					<li>
-						<a href='#zh'>后端</a>
-					</li>
-					<li>
-						<a href='#js'>计算机网络</a>
-					</li>
-					<li>
-						<a href='#js'>算法</a>
-					</li>
-					<li>
-						<a href='#js'>浏览器</a>
-					</li>
-					<li>
-						<a href='#js'>js笔记</a>
-					</li>
-				</ul>
-				<hr ></hr>
-				<ul class="zsfl"> <!--知识分类-->
-					<p>前端</p>
-					<li>
-						<a href="#">Vue</a>
-						<ul>
-							<li>
-								<a href="#">指令</a>
-								<ul>
-									<li>
-										<a href="#">v-bind指令</a>
-									</li>
-									<li>
-										<a href="#">条件渲染 v-if 、 v-show</a>
-									</li>
-									<li>
-										<a href="#">v-if和v-else注意事项</a>
-									</li>
-									<li>
-										<a href="#">v-bind指令</a>
-									</li>
-									<li>
-										<a href="#">v-bind指令</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">父子组件通信props、$emit</a>
-							</li>
-							<li>
-								<a href="#">Vue实例的生命周期钩子函数</a>
-							</li>
-							<li>
-								<a href="">模板语法</a>
-								<ul>
-									<li>
-										<a href="#"> 插值表达式  {{}}</a>
-									</li>
-									<li>
-										<a href="#">  v-text</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">计算属性、方法和侦听器</a>
-							</li>
-							<li>
-								<a href="#">Vue中的样式绑定</a>
-							</li>
-							<li>
-								<a href="#">列表渲染与设置唯一的key键</a>
-							</li>
-							<li>
-								<a href="#">Vue中的set方法</a>
-							</li>
-							<li>
-								<a href="#">父子组件的数据传递</a>
-							</li>
-							<li>
-								<a href="#">组件参数校验与props特性</a>
-							</li>
-							<li>
-								<a href="#">给组件绑定原生事件</a>
-							</li>
-							<li>
-								<a href="#">非父子组件间的传值</a>
-							</li>
-							<li>
-								<a href="#">在Vue中使用插槽 slot</a>
-							</li>
-							<li>
-								<a href="#">动态组件与v-once</a>
-							</li>
-							<li>
-								<a href="#">Vue中CSS动画原理</a>
-							</li>
-							<li>
-								<a href="#">Vue中CSS动画原理</a>
-							</li>
-							<li>
-								<a href="#">在Vue中同时使用过度和动画</a>
-							</li>
-							<li>
-								<a href="#">Vue中的Js动画与Velocity.js的结合</a>
-							</li>
-							<li>
-								<a href="#">Vue中多个元素或组件的过度</a>
-							</li>
-							<li>
-								<a href="#">Vue中的列表过度</a>
-							</li>
-							<li>
-								<a href="#">Vue中的动画封装</a>
-							</li>
-							<li>
-								<a href="#"></a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+
+			<ul>
+				<h2>我的计算机笔记</h2>
+				<li>
+
+					<a href='#js'>前端</a>
+				</li>
+				<li>
+					<a href='#zh'>后端</a>
+				</li>
+				<li>
+					<a href='#js'>计算机网络</a>
+				</li>
+				<li>
+					<a href='#js'>算法</a>
+				</li>
+				<li>
+					<a href='#js'>浏览器</a>
+				</li>
+				<li>
+					<a href='#js'>js笔记</a>
+				</li>
+			</ul>
+			<hr>
+			</hr>
+			<ul class="zsfl">
+				<!--知识分类-->
+				<p>前端</p>
+				<li>
+					<a href="#">Vue</a>
+					<ul>
+						<li>
+							<a href="#">指令</a>
+							<ul>
+								<li>
+									<a href="#">v-bind指令</a>
+								</li>
+								<li>
+									<a href="#">条件渲染 v-if 、 v-show</a>
+								</li>
+								<li>
+									<a href="#">v-if和v-else注意事项</a>
+								</li>
+								<li>
+									<a href="#">v-bind指令</a>
+								</li>
+								<li>
+									<a href="#">v-bind指令</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">父子组件通信props、$emit</a>
+						</li>
+						<li>
+							<a href="#">Vue实例的生命周期钩子函数</a>
+						</li>
+						<li>
+							<a href="">模板语法</a>
+							<ul>
+								<li>
+									<a href="#"> 插值表达式 {{}}</a>
+								</li>
+								<li>
+									<a href="#"> v-text</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">计算属性、方法和侦听器</a>
+						</li>
+						<li>
+							<a href="#">Vue中的样式绑定</a>
+						</li>
+						<li>
+							<a href="#">列表渲染与设置唯一的key键</a>
+						</li>
+						<li>
+							<a href="#">Vue中的set方法</a>
+						</li>
+						<li>
+							<a href="#">父子组件的数据传递</a>
+						</li>
+						<li>
+							<a href="#">组件参数校验与props特性</a>
+						</li>
+						<li>
+							<a href="#">给组件绑定原生事件</a>
+						</li>
+						<li>
+							<a href="#">非父子组件间的传值</a>
+						</li>
+						<li>
+							<a href="#">在Vue中使用插槽 slot</a>
+						</li>
+						<li>
+							<a href="#">动态组件与v-once</a>
+						</li>
+						<li>
+							<a href="#">Vue中CSS动画原理</a>
+						</li>
+						<li>
+							<a href="#">Vue中CSS动画原理</a>
+						</li>
+						<li>
+							<a href="#">在Vue中同时使用过度和动画</a>
+						</li>
+						<li>
+							<a href="#">Vue中的Js动画与Velocity.js的结合</a>
+						</li>
+						<li>
+							<a href="#">Vue中多个元素或组件的过度</a>
+						</li>
+						<li>
+							<a href="#">Vue中的列表过度</a>
+						</li>
+						<li>
+							<a href="#">Vue中的动画封装</a>
+						</li>
+						<li>
+							<a href="#"></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
 
 		</aside>
 		<span id='icon' class='iconfont icon-option'></span>
-		
+
 		<!--内容-->
 		<section>
-			<div>
-				<p class="top">Vue笔记</p>
-				<ul>
-					<li>
-						<h2><a name='js'>指令</a></h2>
-						<ul>
-							<li>
-								<a href="#">v-bind指令: 由父组件传递到子组件值</a>
-							</li>
-							<pre>
+			<div class="vueNote">
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+条件渲染 v-if 、 v-show：
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+
+				<div>
+					<a href="#">v-if和v-else注意事项:</a>
+					<pre>
+								<code>
+//当两个包裹的DOM有相同的地方时，Vue就会尽量的不重新渲染DOM，所以要加key建，使DOM成为独一的
+html:
+&lt;div id=&quot;app&quot;&gt;
+  &lt;div v-if=&quot;show&quot;&gt;
+  用户名：&lt;input type=&quot;text&quot; key=&quot;username&quot;&gt; 
+  &lt;/div&gt;
+  &lt;div v-else&gt;
+  邮箱：&lt;input type=&quot;text&quot; key=&quot;password&quot;&gt;//如果没有加key，则上下两个input会只渲染一个
+  &lt;/div&gt;
+&lt;/div&gt;
+					
+js:
+const app = new Vue({
+  el: "#app",
+  data: {
+    show: false;
+  }
+})
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
 								<code>
 v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
 例：//当show的值为a时，就显示This is a；
 值为b时就显示This is b；都不是时就显示This is others；
 html:
-<p>
-	<span style="font-size: 16px;"><span style="color: rgb(128, 128, 128);">&lt;</span><span style="color: rgb(86, 156, 214);">div</span> <span style="color: rgb(156, 220, 254);">id</span>=<span style="color: rgb(206, 145, 120);">&#39;app&#39;</span><span style="color: rgb(128, 128, 128);">&gt;</span></span>
-</p>
-<p style="text-align: left;">
-	<span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span> <span style="font-size: 10px; color: rgb(156, 220, 254);">v-if</span>=<span style="font-size: 10px; color: rgb(206, 145, 120);">&quot;show === &#39;a&#39;&quot;</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span>This is a<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;/</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span></span>
-</p>
-<p>
-	<span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span> <span style="font-size: 10px; color: rgb(156, 220, 254);">v-else-if</span>=<span style="font-size: 10px; color: rgb(206, 145, 120);">&quot;show === &#39;b&#39;&quot;</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span>This is b<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;/</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span></span>
-</p>
-<p>
-	<span style="font-size: 16px;">&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span> <span style="font-size: 10px; color: rgb(156, 220, 254);">v-else</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span>This is others<span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;/</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;<span style="font-size: 10px; color: rgb(128, 128, 128); font-family: 宋体, SimSun;"></span></span></span>
-</p>
-<p>
-	<span style="font-size: 16px;"><span style="font-size: 10px; color: rgb(128, 128, 128);">&lt;/</span><span style="font-size: 10px; color: rgb(86, 156, 214);">div</span><span style="font-size: 10px; color: rgb(128, 128, 128);">&gt;</span></span>
-</p>
-<p>
-	<br/>
-</p>
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
 					
 js:
-	const app = new Vue({
-		el: '#app',
-		data: {
-			show: 'a'
-		}
-	})
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
 								</code>
 							</pre>
-						</ul>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name=''>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-					<li>
-						<h2><a name='zh'>js笔记</a></h2>
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</li>
-				</ul>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
+				<p class="topP">Vue笔记</p>
+				<div>
+					<a href="#">v-bind指令: 由父组件传递到子组件值</a>
+					<pre>
+								<code>
+v-if值为false时会将元素标签直接删除掉 即不会渲染到页面中;
+例：//当show的值为a时，就显示This is a；
+值为b时就显示This is b；都不是时就显示This is others；
+html:
+&lt;div id=&#x27;app&#x27;&gt;
+  &lt;div v-if=&quot;show === &#x27;a&#x27;&quot;&gt;This is a&lt;/div&gt;
+  &lt;div v-else-if=&quot;show === &#x27;b&#x27;&quot;&gt;This is b&lt;/div&gt;
+  &lt;div v-else&gt;This is others&lt;/div&gt; （v-else必须紧跟v-if或v-else-if）
+&lt;/div&gt;
+					
+js:
+  const app = new Vue({
+    el: '#app',
+    data: {
+      show: 'a'
+	}
+  })
+								</code>
+							</pre>
+				</div>
 			</div>
-		<section>
+			<section>
 	</div>
-	
-	
+
+
 	<script>
-		window.onload = (function() {
+		window.onload = (function () {
 			const leftN = document.getElementById('leftN');
 			const leftNList = leftN.getElementsByTagName('li');
 			const leftNLista = leftN.getElementsByTagName('a')
 			var icon = document.getElementById('icon');
-			
-			
-			
+
+
+
 			icon.onclick = function clickShow() {
 				var leftNWidth = leftN.offsetWidth;
-				if( leftNWidth == 0 ) {
-					leftNWidth = 169 ;
+				if (leftNWidth == 0) {
+					leftNWidth = 200;
 					leftN.style.width = leftNWidth + 'px';
-					icon.style.left = leftNWidth-16 + 'px';
+					icon.style.left = leftNWidth - 16 + 'px';
 					leftN.style.display = 'block';
 					icon.className = 'iconfont icon-shanchuxuanxiang';
-					
+
 				} else {
 					leftNWidth = 0;
 					icon.style.left = leftNWidth + 'px';
 					leftN.style.display = 'none';
 					icon.className = 'iconfont icon-option';
 				}
-				
-				
+
+
 				console.log(leftN.offsetWidth)
-				
-					
+
+
 			}
-			document.addEventListener('click', function(event) {
+			document.addEventListener('click', function (event) {
 				var event = event || window.event;
 				console.log(event.target)
 				console.log(event.target.nodeName)
-				if(event.target != leftN && event.target !=icon && event.target.nodeName != 'LI' &&  event.target.nodeName != 'A') {
-					
+				if (event.target != leftN && event.target != icon && event.target.nodeName != 'LI' && event.target.nodeName != 'A') {
+
 					leftNWidth = 0;
-					icon.style.left = leftNWidth ;
-					console.log(icon.style.left +'a' )
+					icon.style.left = leftNWidth;
+					console.log(icon.style.left + 'a')
 					leftN.style.display = 'none';
 					icon.className = 'iconfont icon-option';
 				}
 				return false;
 				colsole.log(1)
 			}, false)
-			
-			
-			
-			
+
+
+
+
 		})()
 	</script>
 </body>
+
 </html>
