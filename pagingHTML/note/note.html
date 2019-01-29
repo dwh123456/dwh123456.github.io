@@ -48,11 +48,11 @@
 
 		.box aside ul {
 			display: block;
-			/* list-style-type: disc; */
+			list-style-type: none;
 			/* margin-block-start: 1em; */
 			/* margin-block-end: 1em; */
-			/* margin-inline-start: 0px; */
-			/* margin-inline-end: 0px; */
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
 			padding-inline-start: 10px;
 		}
 
@@ -98,6 +98,24 @@
 		.box section div pre {
 			overflow: auto;
 			border: 1px solid #ccc;
+			background-color: #f8f8f8;
+		}
+
+		.box section .vueNote .topP {
+			padding-top: 10px;
+			font-size: 18px;
+			text-align: center;
+		}
+
+		/* .box section .vueNote div {
+			margin-top: 15px;
+		} */
+
+		.box section .vueNote div a {
+			display: inline-block;
+			font-size: 15px;
+			padding-top: 30px;
+			padding-bottom: 5px;
 		}
 	</style>
 </head>
@@ -244,7 +262,7 @@
 		<!--内容-->
 		<section>
 				<a name='topaa'></a><!-- 返回顶部目标 -->
-			<div class="vueNote">
+			<div class="vueNote"> 
 				<p class="topP">Vue笔记</p>
 				<div>
 					<a name="a1_1">v-bind指令: 由父组件传递到子组件值</a>
@@ -297,7 +315,7 @@ const app = new Vue({
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+			
 				<div>
 					<a  name="a1_3">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -322,7 +340,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+			
 				<div>
 					<a name="a1_4">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -347,7 +365,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+				
 				<div>
 					<a name="a1_5">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -372,7 +390,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+			
 				<div>
 					<a name="b1">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -397,7 +415,6 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
 				<div>
 					<a name="c1">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -422,7 +439,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+				
 				<div>
 					<a name="d1">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -447,7 +464,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+				
 				<div>
 					<a name="d1_1">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -472,7 +489,7 @@ js:
 								</code>
 							</pre>
 				</div>
-				<p class="topP">Vue笔记</p>
+				
 				<div>
 					<a name="d1_2">v-bind指令: 由父组件传递到子组件值</a>
 					<pre>
@@ -509,11 +526,12 @@ js:
 			const leftNLista = leftN.getElementsByTagName('a')
 			var icon = document.getElementById('icon');
 
-
-
-			icon.onclick = function clickShow() {
-				var leftNWidth = leftN.offsetWidth;
-				if (leftNWidth == 0) {
+			clickShow()
+			var leftNWidth;
+			icon.onclick = clickShow; 
+			function clickShow() {
+				//leftNWidth = leftN.offsetWidth;
+				if (leftNWidth == 5) {
 					leftNWidth = 200;
 					leftN.style.width = leftNWidth + 'px';
 					icon.style.left = leftNWidth - 16 + 'px';
@@ -521,7 +539,7 @@ js:
 					icon.className = 'iconfont icon-shanchuxuanxiang';
 
 				} else {
-					leftNWidth = 0;
+					leftNWidth = 5;
 					icon.style.left = leftNWidth + 'px';
 					leftN.style.display = 'none';
 					icon.className = 'iconfont icon-option';
@@ -538,8 +556,8 @@ js:
 				console.log(event.target.nodeName)
 				if (event.target != leftN && event.target != icon && event.target.nodeName != 'LI' && event.target.nodeName != 'A') {
 
-					leftNWidth = 0;
-					icon.style.left = leftNWidth;
+					leftNWidth = 5;
+					icon.style.left = leftNWidth + 'px';
 					console.log(icon.style.left + 'a')
 					leftN.style.display = 'none';
 					icon.className = 'iconfont icon-option';
