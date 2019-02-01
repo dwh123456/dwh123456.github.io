@@ -48,12 +48,8 @@
 
 		.box aside ul {
 			display: block;
-			list-style-type: none;
-			/* margin-block-start: 1em; */
-			/* margin-block-end: 1em; */
-			margin-inline-start: 0px;
-			margin-inline-end: 0px;
-			padding-inline-start: 10px;
+			margin-left: 10px;
+			
 		}
 
 		.box aside ul a {
@@ -114,8 +110,8 @@
 		.box section .vueNote div a {
 			display: inline-block;
 			font-size: 15px;
-			padding-top: 30px;
-			padding-bottom: 5px;
+			padding-top: 21px;
+			padding-bottom: 14px;
 		}
 	</style>
 </head>
@@ -532,7 +528,7 @@ js:
 			function clickShow() {
 				//leftNWidth = leftN.offsetWidth;
 				if (leftNWidth == 5) {
-					leftNWidth = 200;
+					leftNWidth = 300;
 					leftN.style.width = leftNWidth + 'px';
 					icon.style.left = leftNWidth - 16 + 'px';
 					leftN.style.display = 'block';
