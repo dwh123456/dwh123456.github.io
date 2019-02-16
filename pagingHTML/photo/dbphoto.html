@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>东北旅行照片</title>
+    <link rel="shortcut icon" href="../../img/deng.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/donbei.css"><!--重置默认样式 -->
+    <link rel="stylesheet" href="../../css/travel.css"><!--公共样式 -->
+    <link rel="stylesheet" href="../../css/trPc.css" media="(min-width: 700px)"><!--PC样式 -->
+    <link rel="stylesheet" href="../../css/trMobile.css" media="(max-width: 700px)"><!--手机样式 -->
+
+    <style>
+        html {
+            margin: 0;
+        }
+
+        ul {
+            position: relative;
+            list-style: none;
+            width: 1000px;
+            margin: 0;
+        }
+
+        li {
+            position: absolute;
+            
+            top: 0;
+            left: 0;
+        }
+
+        img {
+            width: 300px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h2>东北之行</h2>
+    <div class="box">
+        <ul >
+            <li>
+                <img style='height: 180px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img style='height: 250px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img style='height: 260px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img style='height: 300px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img style='height: 160px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img  src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+            <li>
+                <img style='height: 200px' src="https://photo.tuchong.com/3325314/f/606273556.jpg" alt="">
+                
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var w = document.getElementById('')
+        var arrImg = document.getElementsByTagName('li')
+
+        pbl()
+        function pbl() {
+            var arrH = [0,0,0];
+            var imgH, maxH, arrIndex;
+            //var arrIndex = [0,0,0]
+            console.log()
+            for(let i=0; i<arrImg.length; i++) {
+                imgH = arrImg[i].offsetHeight;
+                maxH = Math.min(...arrH)
+                arrIndex = arrH.indexOf(maxH)
+                arrImg[i].style.left = 300*arrIndex + 'px'
+                arrImg[i].style.top = maxH + 10 + 'px'
+                arrH[arrIndex] += imgH;
+                console.log(arrH)
+                console.log(arrIndex)
+                
+                if(i%3 === 0) {
+                    
+                }
+                //arrH.indexOf[i] = 
+            }
+        }
+    </script>
+</body>
+</html>
